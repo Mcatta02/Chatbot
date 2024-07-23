@@ -1,0 +1,15 @@
+Rule <S> <ACTION>
+Rule <ACTION> <INFO> | <ASSIST>
+Rule <INFO> What is the <TOPIC> | Give me an update on <TOPIC>
+Rule <ASSIST> Can you help me with <TASK> | I need assistance with <TASK>
+Rule <TOPIC> news | weather | stocks | sports
+Rule <TASK> homework | project | test | report
+Action <INFO> * <TOPIC> news Here is the latest news for today.
+Action <INFO> * <TOPIC> weather The weather today is sunny.
+Action <INFO> * <TOPIC> stocks The stock market is up by 2%.
+Action <INFO> * <TOPIC> sports The local team won their game today.
+Action <ASSIST> * <TASK> homework Sure, what do you need help with in your homework?
+Action <ASSIST> * <TASK> project Of course, what part of the project are you struggling with?
+Action <ASSIST> * <TASK> test I can help you study for your test. Which topic are you having trouble with?
+Action <ASSIST> * <TASK> report Sure, I can help you with your report. What information do you need?
+Action Sorry, I don't understand your request. Please try again.

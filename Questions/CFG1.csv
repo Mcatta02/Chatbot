@@ -1,0 +1,11 @@
+Rule <s> <action>
+Rule <ACTION> <weather>
+Rule <weather> How is the weather in <location> | <pro> <verb> in <location> What is the weather
+Rule <location> <city> <time> | <city>
+Rule <city> Maastricht | Berlin | Dublin
+Rule <time> tomorrow | today
+Rule <pro> I | today | he
+Rule <verb> am | is
+Action <weather> * <city> berlin <time> tomorrow It will be sunny.
+Action <weather> * <city> Dublin It is rainy.
+Action <weather> * <pro> he <verb> is <city> Maastricht <time> today It is stormy today.
